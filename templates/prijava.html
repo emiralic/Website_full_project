@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Prijava</title>
+        <link rel="stylesheet" href="static/header.css">
+        <link rel="stylesheet" href="static/prijava.css">
+
+</head>
+<body>
+    <div class="menu">
+        <div class="left-part-menu">
+            <ul>
+                <li><a href="{{url_for('index')}}">Početna stranica</a></li>
+                <li><a href="#">O meni&#9660;</a>
+                    <ul class="dropdown">
+                        <li><a href="#">CV</a></li>
+                        <li><a href="#">Motivaciono pismo</a></li>
+                        <li><a href="#">Linkedin profil</a></li>
+                        <li><a href="{{url_for('youtube')}}">Youtube profil</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="middle-part-menu">
+            <a href="http://127.0.0.1:5000/youtube">
+            <img class="logo" src="static/the-ball-game-logo.jpg">
+            </a>
+
+        </div>
+        <div class="right-part-menu">
+            <ul>
+                <li><a href="{{url_for('registracija')}}">Registrujte se</a></li>
+                <li><a href="{{url_for('prijava')}}">Prijavite se</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="prijava">
+         <div class="prijava-text">PRIJAVA</div>
+         <input class="prijava-tab" type="text" placeholder="E-mail">
+         <input class="prijava-tab" type="text" placeholder="Vaša lozinka">
+         <button class="prijava-button">PRIJAVA</button>
+         <div class="nalog">Niste jos registrovani?
+             <a class="uredjivanje-texta" href="{{url_for('registracija')}}">Otvorite nalog</div>
+    </div>
+
+</body>
+
+</html>
